@@ -148,7 +148,7 @@ Support
 ============
 Please feel free to contact us any time if you have any questions or comments.
 
-.. _Sci-Track: http://rdgroups.ciemat.es:8899/web/sci-track/
+.. _Sci-Track: http://rdgroups.ciemat.es/web/sci-track/
 .. _INFN: http://www.ct.infn.it/
 
 :Authors:
