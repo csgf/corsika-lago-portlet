@@ -20,62 +20,33 @@ CORSIKA (COsmic Ray SImulations for KAscade) is a program for detailed simulatio
 ============
 Installation
 ============
-To install the CORSIKA-LAGO portlet the WAR file has to be deployed into the application server.
+Following instructions are meant for science gateway maintainers while generic users can skip this section.
+To install the portlet it is enough to install the war file into the application server and then configure the preference settings into the portlet preferences pane.
 
-As soon as the portlet has been successfully deployed on the Science Gateway the administrator has to configure:
+Preferences are splitted in three separate parts: Generic, Infrastructures and the application execution setting. 
+The generic part contains the **Log level** which contains one of following values, sorted by decreasing level: info, debug, warning and error. 
 
-- the list of e-Infrastructures where the application can be executed;
+The **Application Identifier** refers to theId field value of the GridEngine 'UsersTracking'database table: GridInteractions.
+The infrastructure part consists of different settings related to the destination of users job execution. The fields belonging to this category are:
 
-- some additional application settings.
+ **Enable infrastructure**: A true/false flag which enables or disable the current infrastructure;
 
-1.) To configure a generic e-Infrastructure, the following settings have to be provided:
+ **Infrastructure Name**: The infrastructure name for these settings;   
 
-**Enabled**: A true/false flag which enables or disable the generic e-Infrastructure;
+ **Infrastructure Acronym**: A short name representing the infrastructure;
 
-**Infrastructure**: The acronym to reference the e-Infrastructure;
+ **BDII host**: The Infrastructure information system endpoint (URL). Infrastructure preferences have been thought initially for the elite Grid based infrastructures; 
 
-**VOName**: The VO for this e-Infrastructure;
+ **WMS host**: It is possible to specify which is the brokering service endpoint (URL);
 
-**TopBDII**: The Top BDII for this e-Infrastructure;
+ **Robot Proxy values**: This is a collection of several values which configures the robot proxy settings (Host, Port, proxyID, VO, Role, proxy renewal);
 
-**WMS Endpoint**: A list of WMS endpoint for this e-Infrastructure (max. 10);
-
-**MyProxyServer**: The MyProxyServer for this e-Infrastructure;
-
-**eTokenServer**: The eTokenServer for this e-Infrastructure;
-
-**Port**: The eTokenServer port for this e-Infrastructure;
-
-**Serial Number**: The MD5SUM of the robot certificate to be used for this e-Infrastructure;
-
-**WebDAV**: The EMI-3 DPM Grid Storage Element, with WebDAV interface, to be used for this e-Infrastructure;
-
-In the following figure is shown how the portlet has been configured to run simulation on the EUMEDGRID-Support e-Infrastructure.
+ **Job requirements**: This field contains the necessary statements to specify a job execution requirement, such as a particular software, a particular number of CPUs/RAM, etc.
 
 .. image:: images/settings.jpg
-   :align: center
 
-2.) To configure the application, the following settings have to be provided:
+Actually, depending on the infrastructure, some of the fields above have an overloaded meaning. Please contact the support for further information or watch existing production portlet settings.
 
-**AppID**: The ApplicationID as registered in the UserTracking MySQL database (GridOperations table);
-
-**Log Level**: The log level for the application (e.g.: *INFO* or *VERBOSE*);
-
-**Metadata Host**: The Metadata hostname where download/upload digital-assets (e.g. *glibrary.ct.infn.it*);
-
-**Software TAG**: The list of software tags requested by the application;
-
-**SMTP Host**: The SMTP server used to send notification to users;
-
-**Sender**: The FROM e-mail address to send notification messages about the jobs execution to users;
-
-.. _CHAIN-REDS: https://science-gateway.chain-project.eu/
-.. _gLibrary: https://glibrary.ct.infn.it/
-
-In the figure below is shown how the application settings have been configured to run on the CHAIN-REDS_ Science Gateway.
-
-.. image:: images/settings2.jpg
-   :align: center
 
 ============
 Usage
