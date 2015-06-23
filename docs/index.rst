@@ -1,6 +1,6 @@
-*********************
-CORSIKA-LAGO v1.0.1 Docs
-*********************
+************
+CORSIKA-LAGO
+************
 
 ============
 About
@@ -107,7 +107,7 @@ Each run will produce:
 
 - .tar.gz: the application results available through the gLibrary_ Metadata Server.
 
-.. image:: images/input.jpg
+.. image:: images/input.png
    :align: center
 
 A typical simulation produces, at the end, the following files:
@@ -132,7 +132,7 @@ To inspect Corsika log files:
 
 - *select* the digital assets of any interest for downloading as shown in the figure below:
 
-.. image:: images/browse.jpg
+.. image:: images/browse.png
       :align: center
 
 ============
@@ -144,7 +144,7 @@ References
 * CHAIN-REDS Conference: *"Open Science at the Global Scale: Sharing e-Infrastructures, Sharing Knowledge, Sharing Progress"* – March 31, 2015 – Brussels, Belgium [1_];
 
 ============
-Support
+Contributors
 ============
 Please feel free to contact us any time if you have any questions or comments.
 
@@ -157,6 +157,4 @@ Please feel free to contact us any time if you have any questions or comments.
  `Giuseppe LA ROCCA <mailto:giuseppe.larocca@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_)
 
 
-:Version: v1.0.0, 2015
 
-:Date: Jun 1th, 2015
