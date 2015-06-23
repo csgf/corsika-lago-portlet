@@ -1,6 +1,6 @@
-*********************
-CORSIKA-LAGO v1.0.1 Docs
-*********************
+************
+CORSIKA-LAGO
+************
 
 ============
 About
@@ -157,6 +157,4 @@ Please feel free to contact us any time if you have any questions or comments.
  `Giuseppe LA ROCCA <mailto:giuseppe.larocca@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_)
 
 
-:Version: v1.0.0, 2015
 
-:Date: Jun 1th, 2015
